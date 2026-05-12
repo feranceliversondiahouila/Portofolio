@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ferancel Iverson</title>
+    <link rel="stylesheet" href="../../../css/pages.css">
+</head>
+<body>
+    <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" aria-label="Changer le thème">🌙</button>
+    <a class="btn-back" href="../../Programmer.html" onclick="if(history.length > 1){ history.back(); return false; }">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Retour
+    </a>
+    <div class="container">
+        <div class="glass-card">
+            <h1>AC13.04 : Connaître l'architecture et les technologies d'un site Web</h1>
+            <p>Comprendre comment fonctionne le Web, du protocole HTTP aux architectures client-serveur, et être capable de créer des pages web statiques et dynamiques basiques.</p>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this.parentElement)">
+                    <p class="container">📚 Modules associés</p>
+                </div>
+                <div class="accordion-content">
+                    <p class="container">Les ressources (modules) qui travaillent cette compétence :</p>
+                    <ul class="custom-list">
+                            <li><strong>R112</strong> — Développement Web — HTML5, CSS3, JavaScript</li>
+                            <li><strong>R116</strong> — Architecture Web — protocole HTTP/HTTPS, serveurs web (Apache, Nginx)</li>
+                            <li><strong>R117</strong> — Frameworks et CMS — introduction à Flask/Django, WordPress</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this.parentElement)">
+                    <p class="container">🧠 Notions clés à maîtriser</p>
+                </div>
+                <div class="accordion-content">
+                    <ul class="custom-list">
+                            <li>HTML5 : structure d'une page, balises sémantiques</li>
+                            <li>CSS3 : sélecteurs, box model, flexbox, grid</li>
+                            <li>JavaScript : DOM, événements, fetch API</li>
+                            <li>Protocole HTTP : méthodes GET/POST, codes de statut (200, 404, 500)</li>
+                            <li>HTTPS et certificats TLS/SSL</li>
+                            <li>Architecture MVC (Modèle-Vue-Contrôleur)</li>
+                            <li>Serveur web Apache/Nginx : configuration de base</li>
+                            <li>API REST : requêtes JSON, endpoints</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this.parentElement)">
+                    <p class="container">🛠️ SAÉ liées</p>
+                </div>
+                <div class="accordion-content">
+                    <p class="container">Situations d'apprentissage et d'évaluation mobilisant cette compétence :</p>
+                    <ul class="custom-list">
+                            <li><strong>SAE13</strong> — Création d'un site web de présentation de projet</li>
+                            <li><strong>SAE15</strong> — Déploiement d'une application web sur un serveur Linux</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="glass-card">
+            <h2>📝 Mes traces & preuves</h2>
+            <p>Ajoute ici tes comptes-rendus de TP, captures d'écran, rapports de SAÉ ou tout autre document prouvant que tu maîtrises cette compétence.</p>
+        </section>
+    </div>
+    <script src="../../../js/theme.js"></script>
+    <script src="../../../js/pages.js"></script>
+</body>
+</html>

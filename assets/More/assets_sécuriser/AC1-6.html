@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ferancel Iverson</title>
+    <link rel="stylesheet" href="../../../css/pages.css">
+</head>
+<body>
+    <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" aria-label="Changer le thème">🌙</button>
+    <a class="btn-back" href="../../Sécuriser.html" onclick="if(history.length > 1){ history.back(); return false; }">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Retour
+    </a>
+    <div class="container">
+        <div class="glass-card">
+            <h1>AC24.06Cyber : Comprendre des documents techniques en anglais</h1>
+            <p>Lire, analyser et exploiter des ressources techniques en anglais : CVE, RFC, advisories de sécurité, documentation constructeur et writeups.</p>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this.parentElement)">
+                    <p class="container">📚 Modules associés</p>
+                </div>
+                <div class="accordion-content">
+                    <p class="container">Les ressources (modules) qui travaillent cette compétence :</p>
+                    <ul class="custom-list">
+                            <li><strong>R416</strong> — Anglais technique pour la cybersécurité — vocabulaire, lecture de CVE et RFC</li>
+                            <li><strong>R417</strong> — Veille en cybersécurité — sources (CERT, NVD, exploit-db, blogs)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this.parentElement)">
+                    <p class="container">🧠 Notions clés à maîtriser</p>
+                </div>
+                <div class="accordion-content">
+                    <ul class="custom-list">
+                            <li>Lecture d'une CVE (Common Vulnerabilities and Exposures) : CVSS score, description, impact</li>
+                            <li>Lecture d'une RFC : structure, conventions, extraits clés</li>
+                            <li>Advisories constructeurs : Cisco, Microsoft, Fortinet</li>
+                            <li>Writeups de CTF en anglais : compréhension et reproduction</li>
+                            <li>NVD (National Vulnerability Database) et exploit-db</li>
+                            <li>Abonnement aux flux de veille : RSS, Twitter/X, newsletters (CERT-FR, ANSSI)</li>
+                            <li>Rédaction d'un rapport de vulnérabilité en anglais</li>
+                            <li>Glossaire cybersécurité anglais-français</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this.parentElement)">
+                    <p class="container">🛠️ SAÉ liées</p>
+                </div>
+                <div class="accordion-content">
+                    <p class="container">Situations d'apprentissage et d'évaluation mobilisant cette compétence :</p>
+                    <ul class="custom-list">
+                            <li><strong>SAE42</strong> — Analyse et synthèse d'un bulletin de sécurité en anglais</li>
+                            <li><strong>SAE44</strong> — Veille cybersécurité hebdomadaire à partir de sources anglophones</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="glass-card">
+            <h2>📝 Mes traces & preuves</h2>
+            <p>Ajoute ici tes comptes-rendus de TP, captures d'écran, rapports de SAÉ ou tout autre document prouvant que tu maîtrises cette compétence.</p>
+        </section>
+    </div>
+    <script src="../../../js/theme.js"></script>
+    <script src="../../../js/pages.js"></script>
+</body>
+</html>

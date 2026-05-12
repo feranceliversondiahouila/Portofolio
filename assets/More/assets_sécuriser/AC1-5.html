@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ferancel Iverson</title>
+    <link rel="stylesheet" href="../../../css/pages.css">
+</head>
+<body>
+    <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" aria-label="Changer le thème">🌙</button>
+    <a class="btn-back" href="../../Sécuriser.html" onclick="if(history.length > 1){ history.back(); return false; }">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Retour
+    </a>
+    <div class="container">
+        <div class="glass-card">
+            <h1>AC24.05Cyber : Connaître les différents types d'attaque</h1>
+            <p>Identifier, comprendre et anticiper les principales catégories d'attaques informatiques (réseau, applicatif, social engineering) pour mieux s'en protéger.</p>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this.parentElement)">
+                    <p class="container">📚 Modules associés</p>
+                </div>
+                <div class="accordion-content">
+                    <p class="container">Les ressources (modules) qui travaillent cette compétence :</p>
+                    <ul class="custom-list">
+                            <li><strong>R413</strong> — Sécurité offensive — types d'attaques et méthodologies</li>
+                            <li><strong>R414</strong> — OWASP et vulnérabilités applicatives — Top 10</li>
+                            <li><strong>R415</strong> — Social engineering et phishing — techniques et contre-mesures</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this.parentElement)">
+                    <p class="container">🧠 Notions clés à maîtriser</p>
+                </div>
+                <div class="accordion-content">
+                    <ul class="custom-list">
+                            <li>Reconnaissance : OSINT, scan réseau (Nmap), énumération</li>
+                            <li>Attaques réseau : Man-in-the-Middle, ARP Spoofing, DNS Poisoning</li>
+                            <li>Attaques par force brute et dictionnaire (Hydra, John the Ripper)</li>
+                            <li>Exploitation de vulnérabilités : CVE, Metasploit (initiation)</li>
+                            <li>OWASP Top 10 : SQLi, XSS, CSRF, IDOR, SSRF</li>
+                            <li>Ransomware : mécanismes de chiffrement et de propagation</li>
+                            <li>Phishing et spear-phishing : techniques de manipulation</li>
+                            <li>Attaques DoS / DDoS : volumétrique, protocolaire, applicatif</li>
+                            <li>Lateral movement et élévation de privilèges</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this.parentElement)">
+                    <p class="container">🛠️ SAÉ liées</p>
+                </div>
+                <div class="accordion-content">
+                    <p class="container">Situations d'apprentissage et d'évaluation mobilisant cette compétence :</p>
+                    <ul class="custom-list">
+                            <li><strong>SAE41</strong> — Simulation d'attaques en environnement de lab (CTF)</li>
+                            <li><strong>SAE43</strong> — Analyse d'un incident de sécurité réel</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="glass-card">
+            <h2>📝 Mes traces & preuves</h2>
+            <p>Ajoute ici tes comptes-rendus de TP, captures d'écran, rapports de SAÉ ou tout autre document prouvant que tu maîtrises cette compétence.</p>
+        </section>
+    </div>
+    <script src="../../../js/theme.js"></script>
+    <script src="../../../js/pages.js"></script>
+</body>
+</html>

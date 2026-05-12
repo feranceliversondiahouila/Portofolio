@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ferancel Iverson</title>
+    <link rel="stylesheet" href="../../../css/pages.css">
+</head>
+<body>
+    <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" aria-label="Changer le thème">🌙</button>
+    <a class="btn-back" href="../../Programmer.html" onclick="if(history.length > 1){ history.back(); return false; }">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Retour
+    </a>
+    <div class="container">
+        <div class="glass-card">
+            <h1>AC13.01 : Utiliser un système informatique et ses outils</h1>
+            <p>Être à l'aise avec l'environnement de travail informatique : système de fichiers, ligne de commande, outils de productivité et éditeurs de code.</p>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this.parentElement)">
+                    <p class="container">📚 Modules associés</p>
+                </div>
+                <div class="accordion-content">
+                    <p class="container">Les ressources (modules) qui travaillent cette compétence :</p>
+                    <ul class="custom-list">
+                            <li><strong>R108</strong> — Introduction aux systèmes informatiques — architecture matérielle et logicielle</li>
+                            <li><strong>R109</strong> — Systèmes d'exploitation — Linux CLI et Windows</li>
+                            <li><strong>R110</strong> — Outils du développeur — éditeurs (VS Code, Vim), terminal, gestionnaires de paquets</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this.parentElement)">
+                    <p class="container">🧠 Notions clés à maîtriser</p>
+                </div>
+                <div class="accordion-content">
+                    <ul class="custom-list">
+                            <li>Architecture d'un ordinateur (CPU, RAM, stockage)</li>
+                            <li>Système de fichiers Linux et Windows</li>
+                            <li>Commandes shell : ls, cp, mv, grep, find, pipe</li>
+                            <li>Gestionnaires de paquets : apt, pip, npm</li>
+                            <li>Éditeurs de code : VS Code, raccourcis clavier</li>
+                            <li>Contrôle de version Git : init, add, commit, push, pull</li>
+                            <li>Variables d'environnement et configuration du shell (.bashrc)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this.parentElement)">
+                    <p class="container">🛠️ SAÉ liées</p>
+                </div>
+                <div class="accordion-content">
+                    <p class="container">Situations d'apprentissage et d'évaluation mobilisant cette compétence :</p>
+                    <ul class="custom-list">
+                            <li><strong>SAE13</strong> — Prise en main de l'environnement de développement</li>
+                            <li><strong>SAE11</strong> — Utilisation des outils informatiques dans un projet réseau</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="glass-card">
+            <h2>📝 Mes traces & preuves</h2>
+            <p>Ajoute ici tes comptes-rendus de TP, captures d'écran, rapports de SAÉ ou tout autre document prouvant que tu maîtrises cette compétence.</p>
+        </section>
+    </div>
+    <script src="../../../js/theme.js"></script>
+    <script src="../../../js/pages.js"></script>
+</body>
+</html>
