@@ -297,3 +297,12 @@ h2 {
     .glass-card, .accordion-item { padding: 15px; }
     h1 { font-size: 2rem; }
 }
+
+/* _____________________________________________________________________
+   7. JUSTIFICATION 
+_____________________________________________________________________ */
+
+.justification {
+    text-justify: auto;
+    text-align: justify;
+}
