@@ -307,3 +307,16 @@ _____________________________________________________________________ */
     text-align: justify;
     text-indent: 3em;
 }
+
+/*  ─────────────────────────────────────────────────────
+   8. Image adaptative
+   ───────────────────────────────────────────────────── */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+    transition: transform 0.2s ease;
+    display: block;
+    width: 100%;
+}
